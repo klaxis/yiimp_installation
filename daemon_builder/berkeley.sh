@@ -85,6 +85,7 @@ sudo mkdir -p $STORAGE_ROOT/berkeley/db5.3/
 sudo wget 'http://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz'
 sudo tar -xzvf db-5.3.28.tar.gz
 cd db-5.3.28/build_unix/
+sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' dbinc/atomic.h
 sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$STORAGE_ROOT/berkeley/db5.3/
 sudo make -j$((`nproc`+1))
 cd $STORAGE_ROOT/yiimp/yiimp_setup/tmp
