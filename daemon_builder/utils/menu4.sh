@@ -16,8 +16,8 @@ if [[ ("${LATESTVER}" > "${VERSION}" && "${LATESTVER}" != "null") ]]; then
 	cd ~
 	clear
 
-	hide_output sudo git config --global url."https://github.com/".insteadOf git@github.com:
-	hide_output sudo git config --global url."https://".insteadOf git://
+	sudo git config --global url."https://github.com/".insteadOf git@github.com:
+	sudo git config --global url."https://".insteadOf git://
 	sleep 1
 
 	REPO="Afiniel/yiimp_install_script"
@@ -38,7 +38,7 @@ if [[ ("${LATESTVER}" > "${VERSION}" && "${LATESTVER}" != "null") ]]; then
 	
 	FILEINSTALLEXIST="${temp_dir}/install.sh"
 	if [ -f "$FILEINSTALLEXIST" ]; then
-		hide_output sudo chown -R $USER ${temp_dir}
+		sudo chown -R $USER ${temp_dir}
 		sleep 1
 		cd ${temp_dir}
 		sudo find . -type f -name "*.sh" -exec chmod -R +x {} \;

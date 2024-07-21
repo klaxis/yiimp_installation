@@ -17,7 +17,7 @@ source /etc/yiimpool.conf
 
 if ! locale -a | grep en_US.utf8 > /dev/null; then
 # Generate locale if not exists
-hide_output locale-gen en_US.UTF-8
+locale-gen en_US.UTF-8
 fi
 
 export LANGUAGE=en_US.UTF-8

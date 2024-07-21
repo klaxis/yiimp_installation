@@ -49,7 +49,7 @@ then
   sudo fallocate -l 3G /swapfile
     if [ -e /swapfile ]; then
       sudo chmod 600 /swapfile
-      hide_output sudo mkswap /swapfile
+      sudo mkswap /swapfile
       sudo swapon /swapfile
       echo "vm.swappiness=10" >> sudo /etc/sysctl.conf
     fi

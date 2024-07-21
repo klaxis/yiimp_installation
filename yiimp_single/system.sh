@@ -36,36 +36,36 @@ if [ ! -f /etc/timezone ]; then
 fi
 echo
 
-hide_output sudo apt-get install -y software-properties-common build-essential
+sudo apt-get install -y software-properties-common build-essential
 
 # CertBot
 echo
 
 if [[ "$DISTRO" == "16" || "$DISTRO" == "18" ]]; then
     echo -e "$MAGENTA => Installing CertBot PPA <= $COL_RESET"
-    hide_output sudo add-apt-repository -y ppa:certbot/certbot
-    hide_output sudo apt-get update
+    sudo add-apt-repository -y ppa:certbot/certbot
+    sudo apt-get update
     echo -e "$GREEN => Complete$COL_RESET"
 elif [[ "$DISTRO" == "20" ]]; then
     echo -e "$MAGENTA => Installing CertBot PPA <= $COL_RESET"
-    hide_output sudo apt install -y snapd
-    hide_output sudo snap install core; sudo snap refresh core
-    hide_output sudo snap install --classic certbot
+    sudo apt install -y snapd
+    sudo snap install core; sudo snap refresh core
+    sudo snap install --classic certbot
     sudo ln -s /snap/bin/certbot /usr/bin/certbot
     echo -e "$GREEN => Complete$COL_RESET"
 fi
 
 if [[ "$DISTRO" == "20" ]]; then
 	echo -e "$MAGENTA Ditected$GREEN $DISTRO $RED installing requirements.. $COL_RESET"
-	hide_output sudo apt install -y snapdv
-	hide_output snap install bitcoin-core
+	sudo apt install -y snapdv
+	snap install bitcoin-core
 	echo -e "$GREEN Completed$COL_RESET"
 
 fi
 
 echo -e "$MAGENTA Installing MariaDB...$COL_RESET"
 # MariaDB
-hide_output sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
 
 case "$DISTRO" in
     "18")
@@ -80,7 +80,7 @@ case "$DISTRO" in
 esac
 echo -e "$GREEN Complete...$COL_RESET"
 # Upgrade System Files
-hide_output sudo apt-get update
+sudo apt-get update
 
 if [ ! -f /boot/grub/menu.lst ]; then
 	apt_get_quiet upgrade
@@ -106,8 +106,8 @@ apt_install python3 python3-dev python3-pip \
 echo -e "$GREEN => Complete$COL_RESET"
 echo
 echo -e "$YELLOW => Initializing system random number generator <= $COL_RESET"
-hide_output dd if=/dev/random of=/dev/urandom bs=1 count=32 2>/dev/null
-hide_output sudo pollinate -q -r
+dd if=/dev/random of=/dev/urandom bs=1 count=32 2>/dev/null
+sudo pollinate -q -r
 echo -e "$GREEN => Complete$COL_RESET"
 
 echo
@@ -115,7 +115,7 @@ echo -e "$YELLOW => Initializing UFW Firewall <= $COL_RESET"
 set +eu +o pipefail
 if [ -z "${DISABLE_FIREWALL:-}" ]; then
 	# Install `ufw` which provides a simple firewall configuration.
-	hide_output sudo apt-get install -y ufw
+	sudo apt-get install -y ufw
 	echo
 	echo -e "$YELLOW => Allow incoming connections to SSH <= $COL_RESET"
 	echo
@@ -157,30 +157,30 @@ if [ -z "${DISABLE_FIREWALL:-}" ]; then
 		fi
 	fi
 
-	hide_output sudo ufw --force enable
+	sudo ufw --force enable
 fi
 set -eu -o pipefail
 echo
 echo -e "$MAGENTA =>  Installing YiiMP Required system packages <= $COL_RESET"
 if [ -f /usr/sbin/apache2 ]; then
 	echo Removing apache...
-	hide_output sudo apt-get -y purge apache2 apache2-*
-	hide_output sudo apt-get -y --purge autoremove
+	sudo apt-get -y purge apache2 apache2-*
+	sudo apt-get -y --purge autoremove
 fi
 
-hide_output sudo apt-get update
+sudo apt-get update
 
 # Installing Installing php7.3
 echo
 echo -e "$CYAN => Installing php7.3 $COL_RESET"
 sleep 3
 
-hide_output sudo apt -y update
+sudo apt -y update
 
 if [ ! -f /etc/apt/sources.list.d/ondrej-php-bionic.list ]; then
-	hide_output sudo add-apt-repository -y ppa:ondrej/php
+	sudo add-apt-repository -y ppa:ondrej/php
 fi
-hide_output sudo apt -y update
+sudo apt -y update
 
 
 if [[ "$DISTRO" == "16" || "$DISTRO" == "18" ]]; then
@@ -248,14 +248,14 @@ fi
 
 echo
 echo -e "$CYAN =>  Clone Yiimp Repo <= $COL_RESET"
-hide_output sudo git clone ${YiiMPRepo} $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
+sudo git clone ${YiiMPRepo} $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 if [[ ("$CoinPort" == "yes") ]]; then
 	cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 	sudo git fetch
 	sudo git checkout dev >/dev/null 2>&1
 fi
 
-hide_output sudo service nginx restart
+sudo service nginx restart
 sleep 0.5
 
 set +eu +o pipefail

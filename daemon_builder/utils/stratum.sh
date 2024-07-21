@@ -44,24 +44,24 @@
 
 	# Compil Blocknotify
 	cd ~
-	hide_output git clone https://github.com/Afiniel/stratum
+	git clone https://github.com/ikatheria/yiimp/tree/main/stratum
 	sudo chmod -R 777 $HOME/stratum/
 	cd $HOME/stratum/blocknotify
 	sudo sed -i 's/tu8tu5/'$PASSWORD_STRATUM'/' blocknotify.cpp
-	hide_output sudo make -j$(nproc)
+	sudo make -j$(nproc)
 	sleep 3
 
 	# Compil iniparser
 	cd $HOME/stratum
-	hide_output sudo make -C iniparser/ -j$(nproc)
+	sudo make -C iniparser/ -j$(nproc)
 	sleep 3
 
 	# Compil algos
-	hide_output sudo make -C algos/ -j$(nproc)
+	sudo make -C algos/ -j$(nproc)
 	sleep 3
 
 	# Compil sha3
-	hide_output sudo make -C sha3 -j$(nproc)
+	sudo make -C sha3 -j$(nproc)
 	sleep 3
 	
 	whoami=`whoami`
@@ -72,7 +72,7 @@
 	cd $HOME/$whoami/${installtoserver}/stratum
 	
 	# Compil stratum
-	hide_output sudo make -f Makefile -j$(nproc)
+	sudo make -f Makefile -j$(nproc)
 	sleep 3
 	
 	su $whoami

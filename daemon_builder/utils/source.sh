@@ -559,7 +559,7 @@ else
             if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
                 # make install
                 TMP=$(tempfile)
-                hide_output make -j${NPROC} 2>&1 | tee $TMP
+                make -j${NPROC} 2>&1 | tee $TMP
                 OUTPUT=$(cat $TMP)
                 echo $OUTPUT
                 rm $TMP
@@ -594,7 +594,7 @@ else
             
             cd $STORAGE_ROOT/daemon_builder/temp_coin_builds/${coindir}
             if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
-                hide_output sh autogen.sh
+                sh autogen.sh
             else
                 sh autogen.sh
             fi
@@ -612,7 +612,7 @@ else
                 sudo find $STORAGE_ROOT/daemon_builder/temp_coin_builds/${coindir}/ -type f -exec chmod 777 {} \;
                 
                 if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
-                    hide_output ./configure --with-incompatible-bdb --prefix=`pwd`/depends/i686-pc-linux-gnu
+                    ./configure --with-incompatible-bdb --prefix=`pwd`/depends/i686-pc-linux-gnu
                 else
                     ./configure --with-incompatible-bdb --prefix=`pwd`/depends/i686-pc-linux-gnu
                 fi
@@ -624,7 +624,7 @@ else
                 sudo find $STORAGE_ROOT/daemon_builder/temp_coin_builds/${coindir}/ -type f -exec chmod 777 {} \;
                 
                 if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
-                    hide_output ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-pc-linux-gnu
+                    ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-pc-linux-gnu
                 else
                     ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-pc-linux-gnu
                 fi
@@ -637,7 +637,7 @@ else
                 sudo find $STORAGE_ROOT/daemon_builder/temp_coin_builds/${coindir}/ -type f -exec chmod 777 {} \;
                 
                 if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
-                    hide_output ./configure --with-incompatible-bdb --prefix=`pwd`/depends/i686-w64-mingw32
+                    ./configure --with-incompatible-bdb --prefix=`pwd`/depends/i686-w64-mingw32
                 else
                     ./configure --with-incompatible-bdb --prefix=`pwd`/depends/i686-w64-mingw32
                 fi
@@ -650,7 +650,7 @@ else
                 sudo find $STORAGE_ROOT/daemon_builder/temp_coin_builds/${coindir}/ -type f -exec chmod 777 {} \;
                 
                 if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
-                    hide_output ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-w64-mingw32
+                    ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-w64-mingw32
                 else
                     ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-w64-mingw32
                 fi
@@ -663,7 +663,7 @@ else
                 sudo find $STORAGE_ROOT/daemon_builder/temp_coin_builds/${coindir}/ -type f -exec chmod 777 {} \;
                 
                 if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
-                    hide_output ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-apple-darwin14
+                    ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-apple-darwin14
                 else
                     ./configure --with-incompatible-bdb --prefix=`pwd`/depends/x86_64-apple-darwin14
                 fi
@@ -675,7 +675,7 @@ else
                 sudo find $STORAGE_ROOT/daemon_builder/temp_coin_builds/${coindir}/ -type f -exec chmod 777 {} \;
                 
                 if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
-                    hide_output ./configure --with-incompatible-bdb --prefix=`pwd`/depends/arm-linux-gnueabihf
+                    ./configure --with-incompatible-bdb --prefix=`pwd`/depends/arm-linux-gnueabihf
                 else
                     ./configure --with-incompatible-bdb --prefix=`pwd`/depends/arm-linux-gnueabihf
                 fi
@@ -688,7 +688,7 @@ else
                 sudo find $STORAGE_ROOT/daemon_builder/temp_coin_builds/${coindir}/ -type f -exec chmod 777 {} \;
                 
                 if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
-                    hide_output ./configure --with-incompatible-bdb --prefix=`pwd`/depends/aarch64-linux-gnu
+                    ./configure --with-incompatible-bdb --prefix=`pwd`/depends/aarch64-linux-gnu
                 else
                     ./configure --with-incompatible-bdb --prefix=`pwd`/depends/aarch64-linux-gnu
                 fi
@@ -708,7 +708,7 @@ else
             if [[ ("$ifhidework" == "y" || "$ifhidework" == "Y") ]]; then
                 # make install
                 TMP=$(tempfile)
-                hide_output make -j${NPROC} 2>&1 | tee $TMP
+                make -j${NPROC} 2>&1 | tee $TMP
                 OUTPUT=$(cat $TMP)
                 echo $OUTPUT
                 rm $TMP

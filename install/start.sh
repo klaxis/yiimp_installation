@@ -41,7 +41,7 @@ if [[ ("$FIRST_TIME_SETUP" == "1") ]]; then
 
     if ! locale -a | grep en_US.utf8 >/dev/null; then
         # Generate locale if not exists
-        hide_output locale-gen en_US.UTF-8
+        locale-gen en_US.UTF-8
     fi
 
     export LANGUAGE=en_US.UTF-8
@@ -54,9 +54,9 @@ if [[ ("$FIRST_TIME_SETUP" == "1") ]]; then
 
     #check for user
     echo -e "$YELLOW => Installing needed packages for setup to$GREEN continue$YELLOW  <= $COL_RESET"
-    hide_output sudo apt-get -q -q update
-    hide_output sudo apt-get install -y figlet
-    hide_output sudo apt-get install -y lolcat
+    sudo apt-get -q -q update
+    sudo apt-get install -y figlet
+    sudo apt-get install -y lolcat
     apt_get_quiet install dialog python3 python3-pip acl nano git apt-transport-https || exit 1
 
     # Are we running as root?
@@ -84,7 +84,7 @@ else
     
     if ! locale -a | grep en_US.utf8 >/dev/null; then
     # Generate locale if not exists
-    hide_output locale-gen en_US.UTF-8
+    locale-gen en_US.UTF-8
     fi
 
     export LANGUAGE=en_US.UTF-8
