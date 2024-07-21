@@ -25,10 +25,6 @@ clear
 		path_stratum=${STRATUMFILE}
 	fi
 	
-	BTCDEP="bc1q582gdvyp09038hp9n5sfdtp0plkx5x3yrhq05y"
-	LTCDEP="ltc1qqw7cv4snx9ctmpcf25x26lphqluly4w6m073qw"
-	ETHDEP="0x50C7d0BF9714dBEcDc1aa6Ab0E72af8e6Ce3b0aB"
-	DOGEDEP="DSzcmyCRi7JeN4XUiV2qYhRQAydNv7A1Yb"
 
 	daemonname=daemonbuilder
 	namescryptinstall="DaemonBuilder % Addport"

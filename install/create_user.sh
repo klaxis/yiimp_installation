@@ -118,11 +118,7 @@ if [[ ("$UsingSSH" == "yes") ]]; then
     PRIVATE_IP='"${PRIVATE_IP}"'' | sudo -E tee /etc/yiimpool.conf >/dev/null 2>&1
 
     # Set Donor Addresses
-    echo 'BTCDON="bc1q582gdvyp09038hp9n5sfdtp0plkx5x3yrhq05y"
-    LTCDON="ltc1qqw7cv4snx9ctmpcf25x26lphqluly4w6m073qw"
-    ETHDON="0x50C7d0BF9714dBEcDc1aa6Ab0E72af8e6Ce3b0aB"
-    BCHDON="qzz0aff2k0xnwyzg7k9fcxlndtaj4wa65uxteqe84m"
-    DOGEDON="DSzcmyCRi7JeN4XUiV2qYhRQAydNv7A1Yb"' | sudo -E tee /etc/yiimpooldonate.conf >/dev/null 2>&1
+    sudo -E tee /etc/yiimpooldonate.conf >/dev/null 2>&1
 
     sudo cp -r ~/yiimp_installation /home/${yiimpadmin}/
     cd ~
@@ -222,11 +218,7 @@ case $response in
     PRIVATE_IP='"${PRIVATE_IP}"'' | sudo -E tee /etc/yiimpool.conf >/dev/null 2>&1
 
     # Set Donor Addresses
-    echo 'BTCDON="bc1q582gdvyp09038hp9n5sfdtp0plkx5x3yrhq05y"
-    LTCDON="ltc1qqw7cv4snx9ctmpcf25x26lphqluly4w6m073qw"
-    ETHDON="0x50C7d0BF9714dBEcDc1aa6Ab0E72af8e6Ce3b0aB"
-    BCHDON="qzz0aff2k0xnwyzg7k9fcxlndtaj4wa65uxteqe84m"
-    DOGEDON="DSzcmyCRi7JeN4XUiV2qYhRQAydNv7A1Yb"' | sudo -E tee /etc/yiimpooldonate.conf >/dev/null 2>&1
+    sudo -E tee /etc/yiimpooldonate.conf >/dev/null 2>&1
 
     sudo cp -r ~/yiimp_installation /home/${yiimpadmin}/
     cd ~
