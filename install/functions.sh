@@ -2,8 +2,8 @@
 
 ##############################################
 #											 #
-# Current Modified by Afiniel (2022-06-06)   #
-# Updated by Afiniel (2022-08-01)			 #
+# Current Modified by ikatheria (2022-06-06)   #
+# Updated by ikatheria (2022-08-01)			 #
 # 											 #
 ##############################################
 
@@ -101,7 +101,7 @@ function install_end_message {
 
 	echo -e "$CYAN  --------------------------------------------------------------------------- 	  		$COL_RESET"
 	echo -e "$YELLOW  | Version:$GREEN $VERSION                                                 |				$COL_RESET"
-	echo -e "$YELLOW Yiimp Installer Script Fork By Afiniel https://github.com/ikatheria/yiimp_installation $COL_RESET"
+	echo -e "$YELLOW Yiimp Installer Script Fork By ikatheria https://github.com/ikatheria/yiimp_installation $COL_RESET"
 	echo -e "$CYAN  --------------------------------------------------------------------------- 	  		$COL_RESET"
 	echo -e "$YELLOW   Your mysql information (login/Password) is saved in:$RED ~/.my.cnf					$COL_RESET"
 	echo -e "$CYAN  ---------------------------------------------------------------------------	  	  		$COL_RESET"
@@ -130,7 +130,7 @@ function term_art {
 	echo
 	figlet -f slant -w 100 "YiimpooL" | lolcat
 	echo -e "$CYAN   ----------------------------------------------------------> 	  											$COL_RESET"
-	echo -e "$CYAN  |$YELLOW Yiimp Installer Script Fork By Afiniel!												$COL_RESET"
+	echo -e "$CYAN  |$YELLOW Yiimp Installer Script Fork By ikatheria!												$COL_RESET"
 	echo -e "$CYAN  |$MAGENTA Version:$GREEN $VERSION 														$COL_RESET"
 	echo -e "$CYAN   ----------------------------------------------------------------------> 	  			$COL_RESET"
 	echo -e "$CYAN  |$YELLOW This script will install all the dependencies and will install Yiimp.					$COL_RESET"
@@ -148,7 +148,7 @@ function term_yiimpool {
 	source /etc/yiimpool.conf
 	figlet -f slant -w 100 "YiimpooL" | lolcat
 	echo -e "$CYAN   -----------------|--------------------- 	  											$COL_RESET"
-	echo -e "$YELLOW  Yiimp Installer Script Fork By Afiniel!												$COL_RESET"
+	echo -e "$YELLOW  Yiimp Installer Script Fork By ikatheria!												$COL_RESET"
 	echo -e "$YELLOW  Version:$COL_RESET $GREEN $VERSION 											$COL_RESET"
 	echo -e "$CYAN   -----------------|--------------------- 	  			$COL_RESET"
 	echo
@@ -208,7 +208,7 @@ function last_words {
 	echo "<-------------------------------------|--------------------------------------->"
 	echo -e "$YELLOW                     Donate Wallets:                                   $COL_RESET"
 	echo "<-------------------------------------|--------------------------------------->"
-	echo -e "$YELLOW Thank you for using Yiimp Install Script $VERSION fork by Afiniel!      $COL_RESET"
+	echo -e "$YELLOW Thank you for using Yiimp Install Script $VERSION fork by ikatheria!      $COL_RESET"
 	echo
 	echo -e "$YELLOW =>  To run this installer anytime simply type:$GREEN yiimpool         $COL_RESET"
 	echo -e "$YELLOW =>  Do you want to support me? Feel free to use wallets below:        $COL_RESET"

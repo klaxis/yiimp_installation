@@ -3,7 +3,7 @@
 ##################################################################################
 # This is the entry point for configuring the system.                            #
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox   #
-# Updated by Afiniel for yiimpool use...                                         #
+# Updated by ikatheria for yiimpool use...                                         #
 ##################################################################################
 
 source /etc/functions.sh
@@ -269,7 +269,7 @@ PanelUserDBPassword='"'"''"${PanelUserDBPassword}"''"'"'
 StratumDBUser='"${StratumDBUser}"'
 StratumUserDBPassword='"'"''"${StratumUserDBPassword}"''"'"'
 # Unless you do some serious modifications this installer will not work with any other repo of yiimp!
-YiiMPRepo='https://github.com/Kudaraidee/yiimp.git'
+YiiMPRepo='https://github.com/ikatheria/yiimp.git'
 ' | sudo -E tee $STORAGE_ROOT/yiimp/.yiimp.conf >/dev/null 2>&1
 else
 echo 'STORAGE_USER='"${STORAGE_USER}"'
@@ -293,7 +293,7 @@ StratumDBUser='"${StratumDBUser}"'
 StratumUserDBPassword='"'"''"${StratumUserDBPassword}"''"'"'
 YiiMPStratumName='"${YiiMPStratumName}"'
 # Unless you do some serious modifications this installer will not work with any other repo of yiimp!
-YiiMPRepo='https://github.com/Kudaraidee/yiimp.git'
+YiiMPRepo='https://github.com/ikatheria/yiimp.git'
 ' | sudo -E tee $STORAGE_ROOT/yiimp/.yiimp.conf >/dev/null 2>&1
 fi;;
 1)

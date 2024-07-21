@@ -2,7 +2,7 @@
 
 #####################################################
 # Dedicated Port config generator
-# Created by afiniel for yiimpool
+# Created by ikatheria for yiimpool
 # This generator will modify the main algo.conf file
 # Create the new coin.algo.conf file
 # And update the stratum start file
@@ -48,7 +48,7 @@ if [[ ("$CREATECOIN" == "true") ]]; then
 	coinsymbol="$2"
 	coinalgo="$3"
 else
-	echo -e "$YELLOW Thanks for using the addport script by Afiniel. $COL_RESET"
+	echo -e "$YELLOW Thanks for using the addport script by ikatheria. $COL_RESET"
 	echo
 	echo -e "$YELLOW It will also create a new symbol.algo.conf in $RED $STORAGE_ROOT/yiimp/site/stratum/config $COL_RESET"
 	echo -e "$YELLOW and will create a new stratum.symbol run file in $RED /usr/bin. $COL_RESET"
@@ -185,7 +185,7 @@ fi
 
 echo '#####################################################
 # Source code from https://codereview.stackexchange.com/questions/55077/small-bash-script-to-sta$
-# Updated by Afiniel for Yiimpool use...
+# Updated by ikatheria for Yiimpool use...
 #####################################################
 source /etc/yiimpool.conf
 source $STORAGE_ROOT/yiimp/.yiimp.conf

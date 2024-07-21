@@ -1,8 +1,8 @@
 <h1 align="center">Yiimpool Yiimp Installer with DaemonBuilder and Addport Support</h1>
 <p align="center">
   <img alt="Discord" src="https://img.shields.io/discord/904564600354254898?label=Discord">
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues/afiniel/yiimp_installation">
-  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/afiniel/yiimp_installation">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/ikatheria/yiimp_installation">
+  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/ikatheria/yiimp_installation">
 </p>
 <p align="center">
   <img src="./.assets/motd.png" alt="motd" width="500" height="450">

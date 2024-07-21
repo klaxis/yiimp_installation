@@ -1,6 +1,6 @@
 #!/bin/bash
 ##################################################################
-# Current Modified by Afiniel for Daemon coin & addport & stratum
+# Current Modified by ikatheria for Daemon coin & addport & stratum
 ##################################################################
 source /etc/functions.sh
 source /etc/yiimpool.conf
@@ -56,7 +56,7 @@ function install_end_message {
 	echo
 	figlet -f slant -w 100 "Complete!"
 	echo -e "$CYAN  --------------------------------------------------------------------------- 	$COL_RESET"
-	echo -e "$YELLOW  Script install of Daemon & Addpor & Stratum By Afiniel       					$COL_RESET"
+	echo -e "$YELLOW  Script install of Daemon & Addpor & Stratum By ikatheria       					$COL_RESET"
 	echo -e "$GREEN	Donations are welcome at wallets below:					  						$COL_RESET"
 	echo -e "$YELLOW  BTC:$COL_RESET $MAGENTA btcdons	$COL_RESET"
 	echo -e "$YELLOW  LTC:$COL_RESET $MAGENTA ltcdons	$COL_RESET"

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #####################################################
-# Created by Afiniel for Yiimpool use...
+# Created by ikatheria for Yiimpool use...
 #####################################################
 # Needs to be ran after the first reboot of the system after permissions are set
 #####################################################

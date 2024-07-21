@@ -3,7 +3,7 @@
 ##################################################################################
 # This is the entry point for configuring the system.                            #
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox   #
-# Updated by Afiniel for yiimpool use...                                         #
+# Updated by ikatheria for yiimpool use...                                         #
 ##################################################################################
 
 source /etc/yiimpoolversion.conf
@@ -70,7 +70,7 @@ if [[ ("$UsingDomain" == "yes") ]]; then
   source /etc/functions.sh
   term_yiimpool
   echo -e "$CYAN<-----------------------------------------------------------------------------> $COL_RESET"
-  echo -e "$YELLOW Thank you for using Yiimp Install Script$GREEN $VERSION $YELLOW fork by Afiniel!     $COL_RESET"
+  echo -e "$YELLOW Thank you for using Yiimp Install Script$GREEN $VERSION $YELLOW fork by ikatheria!     $COL_RESET"
   echo
   echo -e "$YELLOW =>  To run this installer anytime simply type:$GREEN yiimpool         $COL_RESET"
   echo -e "$CYAN<-----------------------------------------------------------------------------> $COL_RESET"
@@ -103,7 +103,7 @@ else
   source /etc/functions.sh
   term_yiimpool
   echo -e "$CYAN<----------------------------------------------------------------------------->   $COL_RESET"
-  echo -e "$YELLOW Thank you for using Yiimp Install Script$GREEN $VERSION $YELLOW fork by Afiniel! $COL_RESET"
+  echo -e "$YELLOW Thank you for using Yiimp Install Script$GREEN $VERSION $YELLOW fork by ikatheria! $COL_RESET"
   echo
   echo -e "$YELLOW =>  To run this installer anytime simply type:$GREEN yiimpool                  $COL_RESET"
   echo -e "$CYAN<----------------------------------------------------------------------------->   $COL_RESET"

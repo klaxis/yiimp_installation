@@ -1,5 +1,5 @@
 #####################################################
-# Created by afiniel for crypto use...
+# Created by ikatheria for crypto use...
 #####################################################
 
 source /etc/functions.sh

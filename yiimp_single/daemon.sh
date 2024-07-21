@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ##########################################
-# Created by Afiniel for Yiimpool use... #
+# Created by ikatheria for Yiimpool use... #
 ##########################################
 
 source /etc/functions.sh
@@ -139,14 +139,14 @@ echo -e "$YELLOW => Building blocknotify.sh <= $COL_RESET"
 if [[ ("$wireguard" == "true") ]]; then
   source $STORAGE_ROOT/yiimp/.wireguard.conf
   echo '#####################################
-  # Created by Afiniel for Yiimpool use...  #
+  # Created by ikatheria for Yiimpool use...  #
   ###########################################
   #!/bin/bash
   blocknotify '""''"${DBInternalIP}"''""':$1 $2 $3' | sudo -E tee /usr/bin/blocknotify.sh >/dev/null 2>&1
   sudo chmod +x /usr/bin/blocknotify.sh
 else
   echo '#####################################
-  # Created by Afiniel for Yiimpool use...  #
+  # Created by ikatheria for Yiimpool use...  #
   ###########################################
   #!/bin/bash
   blocknotify 127.0.0.1:$1 $2 $3' | sudo -E tee /usr/bin/blocknotify.sh >/dev/null 2>&1

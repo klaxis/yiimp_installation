@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #########################################################
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox
-# Updated by Afiniel for Yiimpool use...
+# Updated by ikatheria for Yiimpool use...
 # This script is intended to be run like this:
 #
-# curl https://raw.githubusercontent.com/afiniel/yiimp_installation/master/install.sh | bash
+# curl https://raw.githubusercontent.com/ikatheria/yiimp_installation/master/install.sh | bash
 #
 #########################################################
 

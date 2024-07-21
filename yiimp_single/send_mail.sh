@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #####################################################
-# Created by Afiniel for Yiimpool use...
+# Created by ikatheria for Yiimpool use...
 #####################################################
 
 source /etc/functions.sh

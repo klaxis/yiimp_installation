@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #####################################################
-# Updated by Afiniel
+# Updated by ikatheria
 # Updrade this scrypt
 #####################################################
 
@@ -20,7 +20,7 @@ if [[ ("${LATESTVER}" > "${VERSION}" && "${LATESTVER}" != "null") ]]; then
 	sudo git config --global url."https://".insteadOf git://
 	sleep 1
 
-	REPO="Afiniel/yiimp_installation"
+	REPO="ikatheria/yiimp_installation"
 
 	temp_dir="$(tempfile -d)" && \
 		git clone -q git@github.com:${REPO%.git} "${temp_dir}" && \

@@ -1,5 +1,5 @@
 #####################################################
-# Updated by Afiniel for crypto use...
+# Updated by ikatheria for crypto use...
 #####################################################
 
 FUNC=/etc/daemonbuilder.sh

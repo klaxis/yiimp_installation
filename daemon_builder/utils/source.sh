@@ -2,7 +2,7 @@
 
 # This is the source file that compiles coin daemon.
 #
-# Author: Afiniel
+# Author: ikatheria
 #
 # It uses:
 #  Berkeley 4.8 with autogen.sh file.

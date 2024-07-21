@@ -3,7 +3,7 @@
 #
 # This is the main menu
 #
-# Author: Afiniel
+# Author: ikatheria
 #
 # Updated: 2023-03-16
 #

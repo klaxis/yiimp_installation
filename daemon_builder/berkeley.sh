@@ -3,7 +3,7 @@
 ##################################################################################
 # This is the entry point for configuring the system.                            #
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox   #
-# Updated by Afiniel for yiimpool use...                                         #
+# Updated by ikatheria for yiimpool use...                                         #
 #                                                                                #  
 ##################################################################################
 
@@ -153,14 +153,14 @@ echo -e "$YELLOW => Building$GREEN blocknotify.sh$YELLOW <= $COL_RESET"
 if [[ ("$wireguard" == "true") ]]; then
   source $STORAGE_ROOT/yiimp/.wireguard.conf
   echo '#####################################
-  # Created by Afiniel for Yiimpool use...  #
+  # Created by ikatheria for Yiimpool use...  #
   ###########################################
   #!/bin/bash
   blocknotify '""''"${DBInternalIP}"''""':$1 $2 $3' | sudo -E tee /usr/bin/blocknotify.sh >/dev/null 2>&1
   sudo chmod +x /usr/bin/blocknotify.sh
 else
   echo '#####################################
-  # Created by Afiniel for Yiimpool use...  #
+  # Created by ikatheria for Yiimpool use...  #
   ###########################################
   #!/bin/bash
   blocknotify 127.0.0.1:$1 $2 $3' | sudo -E tee /usr/bin/blocknotify.sh >/dev/null 2>&1

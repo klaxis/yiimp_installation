@@ -1,7 +1,7 @@
 #!/bin/env bash
 
 #
-# Author: Afiniel
+# Author: ikatheria
 # Date: 2023-01-12
 # 
 # Description: This install all requirements for DaemonBuilder.

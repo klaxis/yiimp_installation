@@ -4,7 +4,7 @@
 # Source various web sources:
 # https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu
 # https://www.cyberciti.biz/faq/linux-tcp-tuning/
-# Created by Afiniel for Yiimpool use...
+# Created by ikatheria for Yiimpool use...
 #####################################################
 
 source /etc/functions.sh
