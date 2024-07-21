@@ -7,7 +7,7 @@
 source /etc/functions.sh # load our functions
 source /etc/yiimpool.conf
 
-apt_install lsb-release figlet update-motd \
+sudo apt install -y lsb-release figlet update-motd \
     landscape-common update-notifier-common
 cd $HOME/yiimp_install_script/yiimp_single/ubuntu/etc/update-motd.d
 sudo rm -r /etc/update-motd.d/

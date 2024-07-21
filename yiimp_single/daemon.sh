@@ -30,7 +30,7 @@ fi
 echo
 echo -e "$YELLOW => Installing additional system files required for daemons <= $COL_RESET"
 sudo apt-get update
-apt_install build-essential libtool autotools-dev \
+sudo apt -y install build-essential libtool autotools-dev \
   automake pkg-config libssl-dev libevent-dev bsdmainutils git libboost-all-dev libminiupnpc-dev \
   libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev \
   protobuf-compiler libqrencode-dev libzmq3-dev libgmp-dev

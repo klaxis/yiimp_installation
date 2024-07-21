@@ -29,7 +29,7 @@ echo -e "$MAGENTA     <--$YELLOW Creating initial SSL certificate$MAGENTA -->$CO
 echo -e "$MAGENTA    <-------------------------------------->$COL_RESET"
 
 # Install OpenSSL
-apt_install openssl
+sudo apt install -y openssl
 
 # Create SSL directory
 sudo mkdir -p "$STORAGE_ROOT/ssl"

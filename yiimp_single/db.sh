@@ -35,7 +35,7 @@ sudo debconf-set-selections <<<"maria-db-$MARIADB_VERSION mysql-server/root_pass
 sudo debconf-set-selections <<<"maria-db-$MARIADB_VERSION mysql-server/root_password_again password $DBRootPassword"
 
 # Install MariaDB
-apt_install mariadb-server mariadb-client
+sudo apt install -y mariadb-server mariadb-client
 
 # Display completion message
 echo -e "$GREEN => MariaDB build complete <= $COL_RESET"
