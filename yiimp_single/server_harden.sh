@@ -28,4 +28,4 @@ echo 'net.ipv4.tcp_sack = 1' | sudo tee -a /etc/sysctl.conf
 echo 'net.ipv4.tcp_no_metrics_save = 1' | sudo tee -a /etc/sysctl.conf
 echo 'net.core.netdev_max_backlog = 5000' | sudo tee -a /etc/sysctl.conf
 
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single

@@ -172,17 +172,17 @@ echo
 echo -e "$GREEN Daemon setup completed$COL_RESET"
 
 set +eu +o pipefail
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single
 
 echo -e "$MAGENTA => Installing daemonbuilder <=$COL_RESET"
-cd $HOME/yiimp_install_script/daemon_builder
+cd $HOME/yiimp_installation/daemon_builder
 sudo mkdir -p conf
-sudo cp -r $HOME/yiimp_install_script/daemon_builder/utils/* $STORAGE_ROOT/daemon_builder
+sudo cp -r $HOME/yiimp_installation/daemon_builder/utils/* $STORAGE_ROOT/daemon_builder
 
-sudo cp -r $HOME/yiimp_install_script/daemon_builder/conf/daemonbuilder.sh /etc/
+sudo cp -r $HOME/yiimp_installation/daemon_builder/conf/daemonbuilder.sh /etc/
 
 # Copy addport to /usr/bin
-sudo cp -r $HOME/yiimp_install_script/daemon_builder/utils/addport.sh /usr/bin/addport
+sudo cp -r $HOME/yiimp_installation/daemon_builder/utils/addport.sh /usr/bin/addport
 sudo chmod +x /usr/bin/addport
 
 
@@ -221,4 +221,4 @@ DOGEDEP='"${DOGEDEP}"''| sudo -E tee $STORAGE_ROOT/daemon_builder/conf/info.sh >
 sudo chmod +x $STORAGE_ROOT/daemon_builder/conf/info.sh
 
 
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single

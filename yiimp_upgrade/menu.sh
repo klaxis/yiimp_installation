@@ -18,7 +18,7 @@ RESULT=$(dialog --stdout --default-item 1 --title "YiimPool Yiimp Upgrader $VERS
 
 if [ "$RESULT" = "1" ]; then
     clear;
-    cd $HOME/yiimp_install_script/yiimp_upgrade
+    cd $HOME/yiimp_installation/yiimp_upgrade
     source single.sh
 
 elif [ "$RESULT" = "2" ]; then

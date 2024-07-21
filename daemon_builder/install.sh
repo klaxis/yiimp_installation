@@ -616,7 +616,7 @@ else
 		sudo rm -rf ${absolutepath}/daemon_setup
 
 		if [ -z "${STRATUMFILE}" ]; then
-		cd $HOME/yiimp_install_script/yiimp_single
+		cd $HOME/yiimp_installation/yiimp_single
 		fi
 	fi
 fi

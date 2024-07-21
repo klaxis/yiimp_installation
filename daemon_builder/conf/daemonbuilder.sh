@@ -63,7 +63,7 @@ function install_end_message {
 	echo -e "$YELLOW  ETH:$COL_RESET $MAGENTA ethdons	$COL_RESET"
 	echo -e "$YELLOW  BCH:$COL_RESET $MAGENTA bchdons	$COL_RESET"
 	echo -e "$CYAN  --------------------------------------------------------------------------- 	$COL_RESET"
-	echo -e "$CYAN 	https://github.com/Afiniel/yiimp_install_script									$COL_RESET"
+	echo -e "$CYAN 	https://github.com/ikatheria/yiimp_installation									$COL_RESET"
 	echo -e "$CYAN  ---------------------------------------------------------------------------  	$COL_RESET"
 	echo
 	echo -e "$CYAN  ---------------------------------------------------------------------------		$COL_RESET"

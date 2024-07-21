@@ -36,4 +36,4 @@ cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/web/yaamp/core/functions/
 cp -r yaamp.php $STORAGE_ROOT/yiimp/site/web/yaamp/core/functions
 
 echo -e "$YELLOW Stratum build$GREEN complete... $COL_RESET"
-cd $HOME/yiimp_install_script/yiimp_upgrade
+cd $HOME/yiimp_installation/yiimp_upgrade

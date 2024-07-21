@@ -20,12 +20,12 @@ RESULT=$(dialog --stdout --nocancel --default-item 1 --title "YiimPool Menu $VER
 
 if [ "$RESULT" = "1" ]; then
     clear;
-    cd $HOME/yiimp_install_script/yiimp_single
+    cd $HOME/yiimp_installation/yiimp_single
     source start.sh
 
 elif [ "$RESULT" = "2" ]; then
     clear;
-    cd $HOME/yiimp_install_script/yiimp_upgrade
+    cd $HOME/yiimp_installation/yiimp_upgrade
     source start.sh
 
 elif [ "$RESULT" = "3" ]; then

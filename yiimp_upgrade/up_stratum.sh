@@ -27,4 +27,4 @@ cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/stratum
 sudo mv stratum $STORAGE_ROOT/yiimp/site/stratum
 
 echo "Stratum build complete..."
-cd $HOME/yiimp_install_script/yiimp_upgrade
+cd $HOME/yiimp_installation/yiimp_upgrade

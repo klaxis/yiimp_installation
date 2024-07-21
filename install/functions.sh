@@ -101,7 +101,7 @@ function install_end_message {
 
 	echo -e "$CYAN  --------------------------------------------------------------------------- 	  		$COL_RESET"
 	echo -e "$YELLOW  | Version:$GREEN $VERSION                                                 |				$COL_RESET"
-	echo -e "$YELLOW Yiimp Installer Script Fork By Afiniel https://github.com/afiniel/yiimp_install_script $COL_RESET"
+	echo -e "$YELLOW Yiimp Installer Script Fork By Afiniel https://github.com/ikatheria/yiimp_installation $COL_RESET"
 	echo -e "$CYAN  --------------------------------------------------------------------------- 	  		$COL_RESET"
 	echo -e "$YELLOW   Your mysql information (login/Password) is saved in:$RED ~/.my.cnf					$COL_RESET"
 	echo -e "$CYAN  ---------------------------------------------------------------------------	  	  		$COL_RESET"
@@ -157,7 +157,7 @@ function term_yiimpool {
 
 function daemonbuiler_files {
 	echo -e "$YELLOW Copy => Copy Daemonbuilder files.  <= $COL_RESET"
-	cd $HOME/yiimp_install_script
+	cd $HOME/yiimp_installation
 	sudo mkdir -p /etc/utils/daemon_builder
 	sudo cp -r utils/start.sh $HOME/utils/daemon_builder
 	sudo cp -r utils/menu.sh $HOME/utils/daemon_builder

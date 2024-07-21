@@ -7,7 +7,7 @@
 source /etc/functions.sh
 source /etc/yiimpool.conf
 source $STORAGE_ROOT/yiimp/.yiimp.conf
-source $HOME/yiimp_install_script/yiimp_single/.wireguard.install.cnf
+source $HOME/yiimp_installation/yiimp_single/.wireguard.install.cnf
 
 # Create main.sh
 echo '#!/usr/bin/env bash
@@ -23,4 +23,4 @@ done
 exec bash' | sudo -E tee $STORAGE_ROOT/yiimp/site/crons/main.sh >/dev/null 2>&1
 sudo chmod +x $STORAGE_ROOT/yiimp/site/crons/main.sh
 
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single

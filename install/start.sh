@@ -21,7 +21,7 @@ fi
 
 if [[ ("$FIRST_TIME_SETUP" == "1") ]]; then
     clear
-    cd $HOME/yiimp_install_script/install
+    cd $HOME/yiimp_installation/install
 
     # copy functions to /etc
     source functions.sh
@@ -98,7 +98,7 @@ else
     source /etc/functions.sh
     source /etc/yiimpool.conf
     # Start yiimpool
-    cd $HOME/yiimp_install_script/install
+    cd $HOME/yiimp_installation/install
     source menu.sh
     cd ~
 fi

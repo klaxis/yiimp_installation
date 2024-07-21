@@ -61,4 +61,4 @@ if [ ! -f /etc/nginx/dhparam.pem ]; then
 fi
 
 echo -e "$GREEN => Initial self-signed SSL generation complete <= $COL_RESET"
-cd "$HOME/yiimp_install_script/yiimp_single"
+cd "$HOME/yiimp_installation/yiimp_single"

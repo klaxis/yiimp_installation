@@ -14,7 +14,7 @@ source $STORAGE_ROOT/daemon_builder/conf/info.sh
 
 cd $STORAGE_ROOT/daemon_builder
 
-LATESTVER=$(curl -sL 'https://api.github.com/repos/Afiniel/yiimp_install_script/releases/latest' | jq -r '.tag_name')
+LATESTVER=$(curl -sL 'https://api.github.com/repos/ikatheria/yiimp_installation/releases/latest' | jq -r '.tag_name')
 
 
 if [[ ("{$LATESTVER}" > "{$VERSION}" && "${LATESTVER}" != "null") ]]; then
@@ -24,7 +24,7 @@ if [[ ("{$LATESTVER}" > "{$VERSION}" && "${LATESTVER}" != "null") ]]; then
     read -r UPDATE
     if [[ ("${UPDATE}" == "y" || "${UPDATE}" == "Y") ]]; then
         echo "Updating..."
-        cd $HOME/yiimp_install_script
+        cd $HOME/yiimp_installation
         git pull
         echo "Update complete!"
         exit 0

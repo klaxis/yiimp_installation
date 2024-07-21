@@ -32,7 +32,7 @@ if [ ! -d $STORAGE_ROOT/daemon_builder ]; then
 sudo mkdir -p $STORAGE_ROOT/daemon_builder
 fi
 
-cd $HOME/yiimp_install_script/daemon_builder
+cd $HOME/yiimp_installation/daemon_builder
 source requirements.sh
 
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single

@@ -1,8 +1,8 @@
 <h1 align="center">Yiimpool Yiimp Installer with DaemonBuilder and Addport Support</h1>
 <p align="center">
   <img alt="Discord" src="https://img.shields.io/discord/904564600354254898?label=Discord">
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues/afiniel/yiimp_install_script">
-  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/afiniel/yiimp_install_script">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/afiniel/yiimp_installation">
+  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/afiniel/yiimp_installation">
 </p>
 <p align="center">
   <img src="./.assets/motd.png" alt="motd" width="500" height="450">
@@ -42,7 +42,7 @@
 <h4 align="left">To install:</h4>
 
 ```
-curl https://raw.githubusercontent.com/ikatheria/yiimp_install_script/master/install.sh | bash
+curl https://raw.githubusercontent.com/ikatheria/yiimp_installation/master/install.sh | bash
 
 ```
   Installation will take approximately 15 minutes. The installer will let you know when the installation is complete.

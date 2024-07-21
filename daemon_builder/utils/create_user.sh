@@ -8,7 +8,7 @@
 
 source /etc/yiimpoolversion.conf
 source /etc/functions.sh
-cd ~/yiimp_install_script/install
+cd ~/yiimp_installation/install
 clear
 
 # Welcome
@@ -91,13 +91,13 @@ if [[ ("$UsingSSH" == "yes") ]]; then
   ' | sudo -E tee /etc/sudoers.d/${yiimpadmin} >/dev/null 2>&1
 
     echo '
-  cd ~/yiimp_install_script/install
+  cd ~/yiimp_installation/install
   bash start.sh
   ' | sudo -E tee /usr/bin/yiimpool >/dev/null 2>&1
     sudo chmod +x /usr/bin/yiimpool
 
     # Check required files and set global variables
-    cd $HOME/yiimp_install_script/install
+    cd $HOME/yiimp_installation/install
     source pre_setup.sh
 
     # Create the STORAGE_USER and STORAGE_ROOT directory if they don't already exist.
@@ -125,9 +125,9 @@ if [[ ("$UsingSSH" == "yes") ]]; then
     BCHDON="qzz0aff2k0xnwyzg7k9fcxlndtaj4wa65uxteqe84m"
     DOGEDON="D7bjqNwyevTYK9JDZbJPQJXbd1b7PosPDT"' | sudo -E tee /etc/yiimpooldonate.conf >/dev/null 2>&1
 
-    sudo cp -r ~/yiimp_install_script /home/${yiimpadmin}/
+    sudo cp -r ~/yiimp_installation /home/${yiimpadmin}/
     cd ~
-    sudo setfacl -m u:${yiimpadmin}:rwx /home/${yiimpadmin}/yiimp_install_script
+    sudo setfacl -m u:${yiimpadmin}:rwx /home/${yiimpadmin}/yiimp_installation
     sudo rm -r $HOME/yiimpool
     clear
     echo -e "$YELLOW New User:$MAGENTA ${yiimpadmin} $GREEN created!$YELLOW Make sure you save your$RED private key!$COL_RESET"
@@ -195,13 +195,13 @@ case $response in
     ' | sudo -E tee /etc/sudoers.d/${yiimpadmin} >/dev/null 2>&1
 
     echo '
-    cd ~/yiimp_install_script/install
+    cd ~/yiimp_installation/install
     bash start.sh
     ' | sudo -E tee /usr/bin/yiimpool >/dev/null 2>&1
     sudo chmod +x /usr/bin/yiimpool
 
     # Check required files and set global variables
-    cd $HOME/yiimp_install_script/install
+    cd $HOME/yiimp_installation/install
     source pre_setup.sh
 
     # Create the STORAGE_USER and STORAGE_ROOT directory if they don't already exist.
@@ -229,10 +229,10 @@ case $response in
     BCHDON="qzz0aff2k0xnwyzg7k9fcxlndtaj4wa65uxteqe84m"
     DOGEDON="D7bjqNwyevTYK9JDZbJPQJXbd1b7PosPDT"' | sudo -E tee /etc/yiimpooldonate.conf >/dev/null 2>&1
 
-    sudo cp -r ~/yiimp_install_script /home/${yiimpadmin}/
+    sudo cp -r ~/yiimp_installation /home/${yiimpadmin}/
     cd ~
-    sudo setfacl -m u:${yiimpadmin}:rwx /home/${yiimpadmin}/yiimp_install_script
-    sudo rm -r $HOME/yiimp_install_script
+    sudo setfacl -m u:${yiimpadmin}:rwx /home/${yiimpadmin}/yiimp_installation
+    sudo rm -r $HOME/yiimp_installation
     clear
     echo -e "$YELLOW New User:$MAGENTA ${yiimpadmin} $GREEN created$RED $COL_RESET"
     echo

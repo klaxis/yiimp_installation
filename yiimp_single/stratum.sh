@@ -7,7 +7,7 @@
 source /etc/functions.sh
 source /etc/yiimpool.conf
 source $STORAGE_ROOT/yiimp/.yiimp.conf
-source $HOME/yiimp_install_script/yiimp_single/.wireguard.install.cnf
+source $HOME/yiimp_installation/yiimp_single/.wireguard.install.cnf
 
 echo
 term_art
@@ -93,4 +93,4 @@ sudo setfacl -m u:$USER:rwx $STORAGE_ROOT/yiimp/site/stratum/config
 sleep 1.5
 term_art
 echo -e "$GREEN => Stratum build complete $COL_RESET"
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single

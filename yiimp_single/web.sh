@@ -8,7 +8,7 @@
 source /etc/functions.sh
 source /etc/yiimpool.conf
 source $STORAGE_ROOT/yiimp/.yiimp.conf
-source $HOME/yiimp_install_script/yiimp_single/.wireguard.install.cnf
+source $HOME/yiimp_installation/yiimp_single/.wireguard.install.cnf
 
 set -eu -o pipefail
 
@@ -40,24 +40,24 @@ sudo mkdir -p $STORAGE_ROOT/yiimp/site/backup/
 sudo sed -i "s|ROOTDIR=/data/yiimp|ROOTDIR=${STORAGE_ROOT}/yiimp/site|g" /bin/yiimp
 
 if [[ ("$UsingSubDomain" == "y" || "$UsingSubDomain" == "Y" || "$UsingSubDomain" == "yes" || "$UsingSubDomain" == "Yes" || "$UsingSubDomain" == "YES") ]]; then
-  cd $HOME/yiimp_install_script/yiimp_single
+  cd $HOME/yiimp_installation/yiimp_single
   source nginx_subdomain_nonssl.sh
   if [[ ("$InstallSSL" == "y" || "$InstallSSL" == "Y" || "$InstallSSL" == "yes" || "$InstallSSL" == "Yes" || "$InstallSSL" == "YES") ]]; then
-  cd $HOME/yiimp_install_script/yiimp_single
+  cd $HOME/yiimp_installation/yiimp_single
     source nginx_subdomain_ssl.sh
   fi
 else
-  cd $HOME/yiimp_install_script/yiimp_single
+  cd $HOME/yiimp_installation/yiimp_single
   source nginx_domain_nonssl.sh
   if [[ ("$InstallSSL" == "y" || "$InstallSSL" == "Y" || "$InstallSSL" == "yes" || "$InstallSSL" == "Yes" || "$InstallSSL" == "YES") ]]; then
-  cd $HOME/yiimp_install_script/yiimp_single
+  cd $HOME/yiimp_installation/yiimp_single
     source nginx_domain_ssl.sh
   fi
 fi
 
 echo
 echo -e "$MAGENTA => Creating YiiMP configuration files <= $COL_RESET"
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single
 source yiimp_confs/keys.sh
 source yiimp_confs/yiimpserverconfig.sh
 source yiimp_confs/main.sh
@@ -80,7 +80,7 @@ sudo chgrp www-data $STORAGE_ROOT -R
 sudo chmod g+w $STORAGE_ROOT -R
 echo -e "$GREEN => Complete$COL_RESET"
 
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single
 
 #Updating YiiMP files for YiimPool build
 echo
@@ -110,4 +110,4 @@ fi
 echo -e "$GREEN Web build complete$COL_RESET"
 
 set +eu +o pipefail
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single

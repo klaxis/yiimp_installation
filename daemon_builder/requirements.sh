@@ -21,8 +21,8 @@ function print_error {
 }
 trap print_error ERR
 
-cd $HOME/yiimp_install_script/daemon_builder
-sudo cp -r $HOME/yiimp_install_script/daemon_builder/utils/screen-scrypt-daemonbuilder.sh /etc/
+cd $HOME/yiimp_installation/daemon_builder
+sudo cp -r $HOME/yiimp_installation/daemon_builder/utils/screen-scrypt-daemonbuilder.sh /etc/
 sudo chmod +x /etc/screen-scrypt-daemonbuilder.sh
 
 #Install dependencies
@@ -88,5 +88,5 @@ sudo update-alternatives --config gcc
 echo -e "$GREEN gcc & g++ Updated...$COL_RESET"
 
 set +eu +o pipefail
-cd $HOME/yiimp_install_script/daemon_builder
-source $HOME/yiimp_install_script/daemon_builder/berkeley.sh
+cd $HOME/yiimp_installation/daemon_builder
+source $HOME/yiimp_installation/daemon_builder/berkeley.sh

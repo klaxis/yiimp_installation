@@ -4,7 +4,7 @@
 # Updated by Afiniel for Yiimpool use...
 # This script is intended to be run like this:
 #
-# curl https://raw.githubusercontent.com/afiniel/yiimp_install_script/master/install.sh | bash
+# curl https://raw.githubusercontent.com/afiniel/yiimp_installation/master/install.sh | bash
 #
 #########################################################
 
@@ -15,7 +15,7 @@ fi
 echo 'VERSION='"${TAG}"'' | sudo -E tee /etc/yiimpoolversion.conf >/dev/null 2>&1
 
 # Clone the Yiimp Install Script repository if it doesn't exist.
-if [ ! -d $HOME/yiimp_install_script ]; then
+if [ ! -d $HOME/yiimp_installation ]; then
 	if [ ! -f /usr/bin/git ]; then
 		echo Installing git . . .
 		apt-get -q -q update
@@ -28,18 +28,18 @@ if [ ! -d $HOME/yiimp_install_script ]; then
 	echo Downloading Yiimpool Installer ${TAG}. . .
 	git clone \
 		-b ${TAG} --depth 1 \
-		https://github.com/afiniel/yiimp_install_script \
-		"$HOME"/yiimp_install_script \
+		https://github.com/ikatheria/yiimp_installation \
+		"$HOME"/yiimp_installation \
 		< /dev/null 2> /dev/null
 
 	echo
 fi
 
 
-cd $HOME/yiimp_install_script/
+cd $HOME/yiimp_installation/
 
 # Update it.
-sudo chown -R $USER $HOME/yiimp_install_script/.git/
+sudo chown -R $USER $HOME/yiimp_installation/.git/
 if [ "${TAG}" != `git describe --tags` ]; then
 	echo Updating Yiimpool Installer to ${TAG} . . .
 	git fetch --depth 1 --force --prune origin tag ${TAG}
@@ -51,4 +51,4 @@ if [ "${TAG}" != `git describe --tags` ]; then
 fi
 
 # Start setup script.
-bash $HOME/yiimp_install_script/install/start.sh
+bash $HOME/yiimp_installation/install/start.sh

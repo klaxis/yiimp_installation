@@ -7,7 +7,7 @@
 source /etc/functions.sh
 source /etc/yiimpool.conf
 source $STORAGE_ROOT/yiimp/.yiimp.conf
-source $HOME/yiimp_install_script/yiimp_single/.wireguard.install.cnf
+source $HOME/yiimp_installation/yiimp_single/.wireguard.install.cnf
 
 #Create keys file
 echo '<?php
@@ -49,4 +49,4 @@ define('"'"'EXCH_UNNAMED_SECRET'"'"', '"'"''"'"');
 define('"'"'EXCH_BIBOX_SECRET'"'"', '"'"''"'"');
 define('"'"'EXCH_ALTILLY_SECRET'"'"', '"'"''"'"');
 ' | sudo -E tee /etc/yiimp/keys.php >/dev/null 2>&1
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single

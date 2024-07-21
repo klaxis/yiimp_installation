@@ -7,7 +7,7 @@
 source /etc/functions.sh
 source $STORAGE_ROOT/yiimp/.yiimp.conf
 source /etc/yiimpooldonate.conf
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single
 
 term_art
 echo -e "$MAGENTA    <----------------------------->$COL_RESET"
@@ -233,7 +233,7 @@ echo -e "$YELLOW YiiMP Screens$GREEN Added$COL_RESET"
 sudo rm -r $STORAGE_ROOT/yiimp/yiimp_setup
 
 # Fixing exbitron that make white screen and update main.php
-cd $HOME/yiimp_install_script/yiimp_single/yiimp_confs
+cd $HOME/yiimp_installation/yiimp_single/yiimp_confs
 sudo rm -r /home/crypto-data/yiimp/site/web/yaamp/ui/main.php
 sudo rm -r /home/crypto-data/yiimp/site/web/yaamp/core/trading/exbitron_trading.php
 sudo rm -r /home/crypto-data/yiimp/site/web/yaamp/modules/site/coin_form.php
@@ -242,4 +242,4 @@ sudo cp -r main.php /home/crypto-data/yiimp/site/web/yaamp/ui
 sudo cp -r exbitron_trading.php /home/crypto-data/yiimp/site/web/yaamp/core/trading
 sudo cp -r coin_form.php /home/crypto-data/yiimp/site/web/yaamp/modules/site
 
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single

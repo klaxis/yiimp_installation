@@ -22,8 +22,8 @@ echo -e "$MAGENTA    <---------------------------------------->$COL_RESET"
 echo -e "$MAGENTA     <--$YELLOW Install DaemonBuilder Requirements$MAGENTA -->$COL_RESET"
 echo -e "$MAGENTA    <---------------------------------------->$COL_RESET"
 
-cd $HOME/yiimp_install_script/daemon_builder
+cd $HOME/yiimp_installation/daemon_builder
 source start.sh
 
 set +eu +o pipefail
-cd $HOME/yiimp_install_script/yiimp_single
+cd $HOME/yiimp_installation/yiimp_single
