@@ -145,7 +145,7 @@ function ufw_allow {
 }
 
 function restart_service {
-		hide_output sudo service $1 restart
+		sudo service $1 restart
 }
 
 ## Dialog Functions ##
