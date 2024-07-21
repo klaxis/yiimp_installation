@@ -183,7 +183,7 @@ fi
 sudo apt -y update
 
 
-if [[ "$DISTRO" == "16" || "$DISTRO" == "18" ]]; then
+if [[ "$DISTRO" == "20" || "$DISTRO" == "18" ]]; then
 sudo apt -y install php7.4-fpm php7.4-opcache php7.4 php7.4-common php7.4-gd
 sudo apt -y install php7.4-mysql php7.4-imap php7.4-cli php7.4-cgi
 sudo apt -y install php-pear php-auth-sasl mcrypt imagemagick libruby
