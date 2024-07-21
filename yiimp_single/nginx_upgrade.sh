@@ -58,7 +58,7 @@ sudo rm -r /etc/nginx/sites-available/default*
 
 echo -e "$GREEN NGINX upgrade complete.$COL_RESET"
 restart_service nginx
-restart_service php7.3-fpm
+restart_service php7.4-fpm
 
 set +eu +o pipefail
 

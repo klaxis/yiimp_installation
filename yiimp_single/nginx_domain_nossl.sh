@@ -76,6 +76,6 @@ sudo ln -s /etc/nginx/sites-available/${DomainName}.conf /etc/nginx/sites-enable
 sudo ln -s $STORAGE_ROOT/yiimp/site/web /var/www/${DomainName}/html
 
 restart_service nginx
-restart_service php7.3-fpm
+restart_service php7.4-fpm
 set +eu +o pipefail
 cd $HOME/yiimp_installation/yiimp_single

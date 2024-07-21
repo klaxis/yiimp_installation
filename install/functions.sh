@@ -136,7 +136,7 @@ function term_art {
 	echo -e "$CYAN  |$YELLOW This script will install all the dependencies and will install Yiimp.					$COL_RESET"
 	echo -e "$CYAN  |$YELLOW It will also install a MySQL database and a Web server.								$COL_RESET"
 	echo -e "$CYAN  |$YELLOW MariaDB is used for the database.														$COL_RESET"
-	echo -e "$CYAN  |$YELLOW Nginx is used for the Web server, PHP 7.3 is also installed.							$COL_RESET"
+	echo -e "$CYAN  |$YELLOW Nginx is used for the Web server, PHP 7.4 is also installed.							$COL_RESET"
 	echo -e "$CYAN   ----------------------------------------------------------------------> 	  			$COL_RESET"
 	echo
 

@@ -87,7 +87,7 @@ server {
 ' | sudo -E tee /etc/nginx/sites-available/${DomainName}.conf >/dev/null 2>&1
 
 	restart_service nginx >/dev/null 2>&1
-	restart_service php7.3-fpm >/dev/null 2>&1
+	restart_service php7.4-fpm >/dev/null 2>&1
 else
 	echo -e "$GREEN Certbot$RED generation failed, after the installer is finished check$MAGENTA /var/log/letsencrypt$YELLOW (must be root to view) on why it failed. $COL_RESET"
 fi

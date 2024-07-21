@@ -279,11 +279,11 @@ fi
 # fix CDbConnection failed to open the DB connection.
 if [[ "$DISTRO" == "16" || "$DISTRO" == "18" ]]; then
 echo -e "$CYAN => Fixing DBconnection issue... $COL_RESET"
-sudo update-alternatives --set php /usr/bin/php7.3
+sudo update-alternatives --set php /usr/bin/php7.4
 
 elif [[ "$DISTRO" == "20" ]]; then
 echo -e "$CYAN => Fixing DBconnection issue... $COL_RESET"
-sudo update-alternatives --set php /usr/bin/php7.3
+sudo update-alternatives --set php /usr/bin/php7.4
 fi
 
 echo
