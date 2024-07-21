@@ -170,9 +170,9 @@ fi
 
 sudo apt-get update
 
-# Installing Installing php7.3
+# Installing Installing php7.4
 echo
-echo -e "$CYAN => Installing php7.3 $COL_RESET"
+echo -e "$CYAN => Installing php7.4 $COL_RESET"
 sleep 3
 
 sudo apt -y update
@@ -226,6 +226,46 @@ if [[ ("$DISTRO" == "20") ]]; then
 	sleep 2
 	sudo systemctl start php8.2-fpm
 	 sudo systemctl status php8.2-fpm | sed -n "1,3p"
+fi
+
+
+# Installing Fail2Ban
+
+echo
+echo -e "$CYAN => Installing fail2ban $COL_RESET"
+sleep 3
+
+sudo apt -y update
+
+if [[ ("$Installfail2ban" == "y" || "$Installfail2ban" == "Y" || "$Installfail2ban" == "yes" || "$Installfail2ban" == "Yes" || "$Installfail2ban" == "YES") ]]; then
+  sudo apt -y install fail2ban
+sleep 5
+sudo systemctl status fail2ban | sed -n "1,3p"
+echo -e "$GREEN Done...$COL_RESET"
+fi
+
+
+echo
+echo -e "$GREEN Done...$COL_RESET"
+
+
+# Installing PhpMyAdmin
+echo
+echo
+echo -e "$CYAN => Installing phpMyAdmin $COL_RESET"
+echo
+sleep 3
+
+if [[ ("$InstallphpMyAdmin" == "y" || "$InstallphpMyAdmin" == "Y" || "$InstallphpMyAdmin" == "yes" || "$InstallphpMyAdmin" == "Yes" || "$InstallphpMyAdmin" == "YES") ]]; then
+
+echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/admin-user string root" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/admin-pass password $RootPassword" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/app-pass password $PanelUserDBPassword" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/app-password-confirm password $PanelUserDBPassword" | sudo debconf-set-selections
+sudo apt -y install phpmyadmin
+echo -e "$GREEN Done...$COL_RESET"
 fi
 
 # Suppress Upgrade Prompts

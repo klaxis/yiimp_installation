@@ -55,6 +55,8 @@ else
   fi
 fi
 
+
+
 echo
 echo -e "$MAGENTA => Creating YiiMP configuration files <= $COL_RESET"
 cd $HOME/yiimp_installation/yiimp_single

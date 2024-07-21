@@ -102,6 +102,26 @@ UsingSubDomain=no
 InstallSSL=no
 fi
 
+dialog --title "Install fail2ban" \
+--yesno "Would you like the system to install fail2ban automatically?" 7 60
+response=$?
+case $response in
+   0) Installfail2ban=yes;;
+   1) Installfail2ban=no;;
+   255) echo "[ESC] key pressed.";;
+esac
+
+
+dialog --title "Install phpMyAdmin" \
+--yesno "Would you like the system to install phpMyAdmin automatically?" 7 60
+response=$?
+case $response in
+   0) InstallphpMyAdmin=yes;;
+   1) InstallphpMyAdmin=no;;
+   255) echo "[ESC] key pressed.";;
+esac
+
+
 # Back to user input questions regardless of domain name or IP use
 if [ -z "${SupportEmail:-}" ]; then
 DEFAULT_SupportEmail=root@localhost
