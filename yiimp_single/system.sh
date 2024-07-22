@@ -261,7 +261,7 @@ if [[ ("$InstallphpMyAdmin" == "y" || "$InstallphpMyAdmin" == "Y" || "$Installph
 echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect" | sudo debconf-set-selections
 echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | sudo debconf-set-selections
 echo "phpmyadmin phpmyadmin/mysql/admin-user string root" | sudo debconf-set-selections
-echo "phpmyadmin phpmyadmin/mysql/admin-pass password $RootPassword" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/admin-pass password $DBRootPassword" | sudo debconf-set-selections
 echo "phpmyadmin phpmyadmin/mysql/app-pass password $PanelUserDBPassword" | sudo debconf-set-selections
 echo "phpmyadmin phpmyadmin/app-password-confirm password $PanelUserDBPassword" | sudo debconf-set-selections
 sudo apt -y install phpmyadmin
