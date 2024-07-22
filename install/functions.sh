@@ -181,23 +181,6 @@ function daemonbuiler_files {
 	sleep 2
 }
 
-function hide_output {
-	OUTPUT=$(tempfile)
-	$@ &>$OUTPUT &
-	spinner
-	E=$?
-	if [ $E != 0 ]; then
-		echo
-		echo FAILED: $@
-		echo -----------------------------------------
-		cat $OUTPUT
-		echo -----------------------------------------
-		exit $E
-	fi
-
-	rm -f $OUTPUT
-}
-
 function last_words {
 	echo "<-------------------------------------|---------------------------------------->"
 	echo

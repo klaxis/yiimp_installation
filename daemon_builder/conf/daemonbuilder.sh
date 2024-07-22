@@ -92,26 +92,6 @@ function term_art {
 	echo
 }
 
-function hide_output {
-		if [[ "${DISTRO}" == '22' ]]; then
-			OUTPUT=$(tempfile)
-		else
-			OUTPUT=$(tempfile)
-		fi
-		OUTPUT=$(tempfile)
-		$@ &> $OUTPUT & spinner
-		E=$?
-		if [ $E != 0 ]; then
-		echo
-		echo FAILED: $@
-		echo -----------------------------------------
-		cat $OUTPUT
-		echo -----------------------------------------
-		exit $E
-		fi
-
-		rm -f $OUTPUT
-}
 
 function spinner_output {
 		OUTPUT=$(tempfile)
