@@ -162,11 +162,7 @@ fi
 set -eu -o pipefail
 echo
 echo -e "$MAGENTA =>  Installing YiiMP Required system packages <= $COL_RESET"
-if [ -f /usr/sbin/apache2 ]; then
-	echo Removing apache...
-	sudo apt-get -y purge apache2 apache2-*
-	sudo apt-get -y --purge autoremove
-fi
+
 
 sudo apt-get update
 
@@ -228,6 +224,11 @@ if [[ ("$DISTRO" == "20") ]]; then
 	 sudo systemctl status php8.2-fpm | sed -n "1,3p"
 fi
 
+if [ -f /usr/sbin/apache2 ]; then
+	echo Removing apache...
+	sudo apt-get -y purge apache2 apache2-*
+	sudo apt-get -y --purge autoremove
+fi
 
 # Installing Fail2Ban
 
