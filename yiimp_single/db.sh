@@ -24,7 +24,7 @@ if [[ ("$wireguard" == "true") ]]; then
 fi
 
 # Define MariaDB version
-MARIADB_VERSION='10.4'
+MARIADB_VERSION='10.3'
 
 echo -e "$MAGENTA    <----------------------------->$COL_RESET"
 echo -e "$MAGENTA     <--$YELLOW Installing MariaDB$MAGENTA $MARIADB_VERSION -->$COL_RESET"

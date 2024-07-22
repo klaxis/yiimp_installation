@@ -69,13 +69,13 @@ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F2
 
 case "$DISTRO" in
     "18")
-        sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://mirror.one.com/mariadb/repo/10.4/ubuntu bionic main' >/dev/null 2>&1
+        sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://mirror.one.com/mariadb/repo/10.3/ubuntu bionic main' >/dev/null 2>&1
         ;;
     "20")
-        sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el,s390x] http://mirror.one.com/mariadb/repo/10.4/ubuntu focal main' >/dev/null 2>&1
+        sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el,s390x] http://mirror.one.com/mariadb/repo/10.3/ubuntu focal main' >/dev/null 2>&1
         ;;
     "16")
-        sudo add-apt-repository 'deb [arch=amd64,arm64,i386,ppc64el] http://mirror.one.com/mariadb/repo/10.4/ubuntu xenial main' >/dev/null 2>&1
+        sudo add-apt-repository 'deb [arch=amd64,arm64,i386,ppc64el] http://mirror.one.com/mariadb/repo/10.3/ubuntu xenial main' >/dev/null 2>&1
         ;;
 esac
 echo -e "$GREEN Complete...$COL_RESET"
