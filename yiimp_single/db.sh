@@ -170,5 +170,25 @@ sudo bash -c "echo \"$config_string\" >> /etc/mysql/my.cnf"
 # Restart MariaDB
 restart_service mysql
 
+# Installing PhpMyAdmin
+echo
+echo
+echo -e "$CYAN => Installing phpMyAdmin $COL_RESET"
+echo
+sleep 3
+
+if [[ ("$InstallphpMyAdmin" == "y" || "$InstallphpMyAdmin" == "Y" || "$InstallphpMyAdmin" == "yes" || "$InstallphpMyAdmin" == "Yes" || "$InstallphpMyAdmin" == "YES") ]]; then
+
+echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/admin-user string root" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/admin-pass password $DBRootPassword" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/app-pass password $PanelUserDBPassword" | sudo debconf-set-selections
+echo "phpmyadmin phpmyadmin/app-password-confirm password $PanelUserDBPassword" | sudo debconf-set-selections
+sudo apt -y install phpmyadmin
+echo -e "$GREEN Done...$COL_RESET"
+fi
+
+
 set +eu +o pipefail
 cd $HOME/yiimp_installation/yiimp_single
