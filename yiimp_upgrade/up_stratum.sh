@@ -19,7 +19,7 @@ make -j$((`nproc`+1))
 
 cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/stratum
 if [[ ("$AutoExchange" == "y" || "$AutoExchange" == "Y" || "$AutoExchange" == "yes" || "$AutoExchange" == "Yes" || "$AutoExchange" == "YES") ]]; then
-sudo sed -i 's/CFLAGS += -DNO_EXCHANGE/#CFLAGS += -DNO_EXCHANGE/' $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/stratum/Makefile
+sudo sed -i 's/CFLAGS += -DNO_EXCHANGE/CFLAGS += -DNO_EXCHANGE/' $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/stratum/Makefile
 fi
 make -j$((`nproc`+1))
 
