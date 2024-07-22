@@ -185,7 +185,7 @@ sudo apt -y install php7.4-mysql php7.4-imap php7.4-cli php7.4-cgi
 sudo apt -y install php-pear php-auth-sasl mcrypt imagemagick libruby
 sudo apt -y install php7.4-curl php7.4-intl php7.4-pspell php7.4-sqlite3
 sudo apt -y install php7.4-tidy php7.4-xmlrpc php7.4-xsl memcached php-memcache
-sudo apt -y install php-imagick php-gettext php7.4-zip php7.4-mbstring
+sudo apt -y install php-imagick php7.4-zip php7.4-mbstring
 sudo apt -y install ntpdate python3 python3-dev python3-pip
 sudo apt -y install curl git sudo coreutils pollinate unzip unattended-upgrades cron
 sudo apt -y install pwgen libgmp3-dev libmysqlclient-dev libcurl4-gnutls-dev
@@ -200,7 +200,7 @@ sudo apt -y install php7.4-fpm php7.4-opcache php7.4 php7.4-common php7.4-gd
 sudo apt -y install php7.4-mysql php7.4-imap php7.4-cli php7.4-cgi
 sudo apt -y install php-pear php-auth-sasl mcrypt imagemagick libruby
 sudo apt -y install php7.4-tidy php7.4-xmlrpc php7.4-xsl memcached php-memcache
-sudo apt -y install php-imagick php-gettext php7.4-zip php7.4-mbstring
+sudo apt -y install php-imagick php7.4-zip php7.4-mbstring
 sudo apt -y install ntpdate python3 python3-dev python3-pip
 sudo apt -y install curl git sudo coreutils pollinate unzip unattended-upgrades cron
 sudo apt -y install pwgen libgmp3-dev libmysqlclient-dev libcurl4-gnutls-dev
