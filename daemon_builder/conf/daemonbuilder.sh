@@ -93,22 +93,6 @@ function term_art {
 }
 
 
-function spinner_output {
-		OUTPUT=$(tempfile)
-		$@ &> $OUTPUT & spinning_timer
-		E=$?
-		if [ $E != 0 ]; then
-		echo
-		echo FAILED: $@
-		echo -----------------------------------------
-		cat $OUTPUT
-		echo -----------------------------------------
-		exit $E
-		fi
-
-		rm -f $OUTPUT
-}
-
 function apt_get_quiet {
 		DEBIAN_FRONTEND=noninteractive sudo apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew" "$@"
 }

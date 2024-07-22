@@ -54,10 +54,26 @@ echo -e "$GREEN => Additional System Files Completed <= $COL_RESET"
 echo
 echo -e "$MAGENTA => Building Berkeley$GREEN 4.8$MAGENTA  <= $COL_RESET"
 sudo mkdir -p $STORAGE_ROOT/berkeley/db4/
+sudo wget 'http://download.oracle.com/berkeley-db/db-4.8.30.zip'
+sudo unzip db-4.8.30.zip
+cd cd db-4.8.30/build_unix/
+sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' dbinc/atomic.h
+sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$STORAGE_ROOT/berkeley/db4/
+sudo make -j$((`nproc`+1))
+cd $STORAGE_ROOT/yiimp/yiimp_setup/tmp
+sudo rm -r db-4.8.30.zip db-4.8.30
+echo
+echo -e "$GREEN => Berkeley 4.8 Completed <= $COL_RESET"
+
+
+echo
+echo -e "$MAGENTA => Building Berkeley$GREEN 4.8$MAGENTA  <= $COL_RESET"
+sudo mkdir -p $STORAGE_ROOT/berkeley/db4/
 sudo wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
 sudo tar -xzvf db-4.8.30.NC.tar.gz
-cd db-4.8.30.NC/build_unix/
-sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' dbinc/atomic.h
+cd db-4.8.30.NC/
+sudo sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' dbinc/atomic.h
+cd build_unix/
 sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$STORAGE_ROOT/berkeley/db4/
 sudo make -j$((`nproc`+1))
 cd $STORAGE_ROOT/yiimp/yiimp_setup/tmp
@@ -72,7 +88,7 @@ sudo mkdir -p $STORAGE_ROOT/berkeley/db5/
 sudo wget 'http://download.oracle.com/berkeley-db/db-5.1.29.tar.gz'
 sudo tar -xzvf db-5.1.29.tar.gz
 cd db-5.1.29/build_unix/
-sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' dbinc/atomic.h
+sudo sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' dbinc/atomic.h
 sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$STORAGE_ROOT/berkeley/db5/
 sudo make -j$((`nproc`+1))
 cd $STORAGE_ROOT/yiimp/yiimp_setup/tmp
