@@ -102,7 +102,6 @@ UsingSubDomain=no
 InstallSSL=no
 fi
 
-if
 dialog --title "Install fail2ban" \
 --yesno "Would you like the system to install fail2ban automatically?" 7 60
 response=$?
