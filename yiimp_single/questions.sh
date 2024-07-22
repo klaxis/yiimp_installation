@@ -112,7 +112,7 @@ case $response in
    255) echo "[ESC] key pressed.";;
 esac
 
-if
+
 dialog --title "Install phpMyAdmin" \
 --yesno "Would you like the system to install phpMyAdmin automatically?" 7 60
 response=$?
@@ -121,8 +121,7 @@ case $response in
    1) InstallphpMyAdmin=no;;
    255) echo "[ESC] key pressed.";;
 esac
-fi
-fi
+
 
 # Back to user input questions regardless of domain name or IP use
 if [ -z "${SupportEmail:-}" ]; then
