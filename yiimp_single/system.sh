@@ -193,8 +193,8 @@ sudo apt -y install libkrb5-dev libldap2-dev libidn11-dev gnutls-dev librtmp-dev
 sudo apt -y install build-essential libtool autotools-dev automake pkg-config libevent-dev bsdmainutils libssl-dev
 sudo apt -y install automake cmake gnupg2 ca-certificates lsb-release nginx certbot libsodium-dev
 sudo apt -y install libnghttp2-dev librtmp-dev libssh2-1 libssh2-1-dev libldap2-dev libidn11-dev libpsl-dev libkrb5-dev php7.4-memcache php7.4-memcached memcached
-sudo apt -y install php8.1-mysql
-sudo apt -y install libssh-dev libbrotli-dev php8.2-curl
+sudo apt -y install php7.4-mysql
+sudo apt -y install libssh-dev libbrotli-dev php7.4-curl
 else
 sudo apt -y install php7.4-fpm php7.4-opcache php7.4 php7.4-common php7.4-gd
 sudo apt -y install php7.4-mysql php7.4-imap php7.4-cli php7.4-cgi
@@ -208,20 +208,20 @@ sudo apt -y install libkrb5-dev libldap2-dev libidn11-dev gnutls-dev librtmp-dev
 sudo apt -y install build-essential libtool autotools-dev automake pkg-config libevent-dev bsdmainutils libssl-dev
 sudo apt -y install automake cmake gnupg2 ca-certificates lsb-release nginx certbot libsodium-dev
 sudo apt -y install libnghttp2-dev librtmp-dev libssh2-1 libssh2-1-dev libldap2-dev libidn11-dev libpsl-dev libkrb5-dev php7.4-memcache php7.4-memcached memcached
-sudo apt -y install php8.1-mysql
-sudo apt -y install libssh-dev libbrotli-dev php8.2-curl
+sudo apt -y install php7.4-mysql
+sudo apt -y install libssh-dev libbrotli-dev php7.4-curl
 fi
 
-if [[ ("$DISTRO" == "20") ]]; then
-	sudo apt -y install php8.2-fpm php8.2-opcache php8.2 php8.2-common php8.2-gd php8.2-mysql php8.2-imap php8.2-cli
-	sudo apt -y install php8.2-cgi php8.2-curl php8.2-intl php8.2-pspell
-	sudo apt -y install php8.2-sqlite3 php8.2-tidy php8.2-xmlrpc php8.2-xsl php8.2-zip
-	sudo apt -y install php8.2-mbstring php8.2-memcache php8.2-memcached certbot
-	sudo apt -y install libssh-dev libbrotli-dev
-	sleep 2
-	sudo systemctl start php8.2-fpm
-	 sudo systemctl status php8.2-fpm | sed -n "1,3p"
-fi
+#if [[ ("$DISTRO" == "20") ]]; then
+#	sudo apt -y install php8.2-fpm php8.2-opcache php8.2 php8.2-common php8.2-gd php8.2-mysql php8.2-imap php8.2-cli
+#	sudo apt -y install php8.2-cgi php8.2-curl php8.2-intl php8.2-pspell
+#	sudo apt -y install php8.2-sqlite3 php8.2-tidy php8.2-xmlrpc php8.2-xsl php8.2-zip
+#	sudo apt -y install php8.2-mbstring php8.2-memcache php8.2-memcached certbot
+#	sudo apt -y install libssh-dev libbrotli-dev
+#	sleep 2
+#	sudo systemctl start php8.2-fpm
+#	 sudo systemctl status php8.2-fpm | sed -n "1,3p"
+#fi
 
 if [ -f /usr/sbin/apache2 ]; then
 	echo Removing apache...
