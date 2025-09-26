@@ -4,7 +4,7 @@
 # Updated by ikatheria for Yiimpool use...
 # This script is intended to be run like this:
 #
-# curl https://raw.githubusercontent.com/ikatheria/yiimp_installation/master/install.sh | bash
+# curl https://raw.githubusercontent.com/klaxis/yiimp_installation/master/install.sh | bash
 #
 #########################################################
 
@@ -28,7 +28,7 @@ if [ ! -d $HOME/yiimp_installation ]; then
 	echo Downloading Yiimpool Installer ${TAG}. . .
 	git clone \
 		-b ${TAG} --depth 1 \
-		https://github.com/ikatheria/yiimp_installation \
+		https://github.com/klaxis/yiimp_installation \
 		"$HOME"/yiimp_installation \
 		< /dev/null 2> /dev/null
 
