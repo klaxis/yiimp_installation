@@ -42,7 +42,7 @@
 <h4 align="left">To install:</h4>
 
 ```
-curl https://raw.githubusercontent.com/ikatheria/yiimp_installation/master/install.sh | bash
+curl https://raw.githubusercontent.com/klaxis/yiimp_installation/master/install.sh | bash
 
 ```
   Installation will take approximately 15 minutes. The installer will let you know when the installation is complete.
