@@ -109,23 +109,40 @@ echo -e "$YELLOW => Importing YiiMP Default database values <= $COL_RESET"
 cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/sql
 
 # import SQL dump
-sudo zcat 2024-03-06-complete_export.sql.gz  | sudo mysql -u root -p"${DBRootPassword}" "${YiiMPDBName}"
+sudo zcat 2021-06-21-yaamp.sql.gz  | sudo mysql -u root -p"${DBRootPassword}" "${YiiMPDBName}"
 
 SQL_FILES=(
-2024-04-01-shares_blocknumber.sql
-2024-05-04-add_neoscrypt_xaya_algo.sql
-2024-03-18-add_aurum_algo.sql
-2024-04-05-algos_port_color.sql
-2025-02-06-add_usemweb.sql
-2024-03-29-add_github_version.sql
-2024-04-22-add_equihash_algos.sql
-2025-02-13-add_xelisv2-pepew.sql
-2024-03-31-add_payout_threshold.sql
-2024-04-23-add_pers_string.sql
-2025-02-23-add_algo_kawpow.sql
-2024-04-01-add_auto_exchange.sql
-2024-04-29-add_sellthreshold.sql
-2025-03-31-rename_table_exchange.sql
+2015-07-01-accounts_hostaddr.sql
+2015-07-12-yaamp.sql.gz
+2015-07-15-coins_hasmasternodes.sql
+2015-09-20-blocks_worker.sql
+2016-02-17-payouts_errmsg.sql
+2016-02-18-accounts_donation.sql
+2016-02-23-shares_diff.sql
+2016-03-26-markets.sql
+2016-03-30-coins.sql
+2016-04-03-accounts.sql
+2016-04-03-yaamp.sql.gz
+2016-04-24-market_history.sql
+2016-04-27-settings.sql
+2016-05-11-coins.sql
+2016-05-15-benchmarks.sql
+2016-05-23-bookmarks.sql
+2016-06-01-notifications.sql
+2016-06-04-bench_chips.sql
+2016-11-23-coins.sql
+2017-02-05-benchmarks.sql
+2017-03-31-earnings_index.sql
+2017-05-accounts_case_swaptime.sql
+2017-06-payouts_coinid_memo.sql
+2017-09-notifications.sql
+2017-10-bookmarks.sql
+2017-11-segwit.sql
+2018-01-stratums_ports.sql
+2018-02-coins_getinfo.sql
+2018-09-22-workers.sql
+2019-03-coins_thepool_life.sql
+2020-06-03-blocks.sql
 )
 
 for file in "${SQL_FILES[@]}"; do
