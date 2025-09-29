@@ -109,7 +109,7 @@ echo -e "$YELLOW => Importing YiiMP Default database values <= $COL_RESET"
 cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/sql
 
 # import SQL dump
-sudo zcat 2021-06-21-yaamp.sql.gz  | sudo mysql -u root -p"${DBRootPassword}" "${YiiMPDBName}"
+sudo zcat 2020-11-10-yaamp.sql.gz  | sudo mysql -u root -p"${DBRootPassword}" "${YiiMPDBName}"
 
 SQL_FILES=(
 2015-07-01-accounts_hostaddr.sql
