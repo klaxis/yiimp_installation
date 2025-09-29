@@ -113,7 +113,6 @@ sudo zcat 2020-11-10-yaamp.sql.gz  | sudo mysql -u root -p"${DBRootPassword}" "$
 
 SQL_FILES=(
 2015-07-01-accounts_hostaddr.sql
-2015-07-12-yaamp.sql.gz
 2015-07-15-coins_hasmasternodes.sql
 2015-09-20-blocks_worker.sql
 2016-02-17-payouts_errmsg.sql
