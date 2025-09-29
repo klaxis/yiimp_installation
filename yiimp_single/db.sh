@@ -122,7 +122,6 @@ SQL_FILES=(
 2016-03-26-markets.sql
 2016-03-30-coins.sql
 2016-04-03-accounts.sql
-2016-04-03-yaamp.sql.gz
 2016-04-24-market_history.sql
 2016-04-27-settings.sql
 2016-05-11-coins.sql
