@@ -3,7 +3,7 @@
 ##################################################################################
 # This is the entry point for configuring the system.                            #
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox   #
-# Updated by ikatheria for yiimpool use...                                         #
+# Updated by klaxis for yiimpool use...                                         #
 ##################################################################################
 if [ "$(lsb_release -d | sed 's/.*:\s*//' | sed 's/20\.04\.[0-9]/20.04/')" == "Ubuntu 20.04 LTS" ]; then
   DISTRO=20

@@ -2,7 +2,7 @@
 
 #####################################################
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox
-# Updated by ikatheria for crypto use...
+# Updated by klaxis for crypto use...
 #####################################################
 
 # Load required functions and configurations

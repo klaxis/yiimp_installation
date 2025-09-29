@@ -1,6 +1,6 @@
 #!/bin/bash
 ##########################################
-# Updated by ikatheria for crypto use...
+# Updated by klaxis for crypto use...
 ##########################################
 
 ESC_SEQ="\x1b["

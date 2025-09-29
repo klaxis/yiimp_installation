@@ -3,7 +3,7 @@
 #
 # This is the main menu
 #
-# Author: ikatheria
+# Author: klaxis
 #
 # Updated: 2023-03-16
 #

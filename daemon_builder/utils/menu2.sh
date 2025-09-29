@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #####################################################
-# Updated by ikatheria
+# Updated by klaxis
 # Menu: Add Coin to Dedicated Port and run stratum
 #####################################################
 

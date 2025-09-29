@@ -1,5 +1,5 @@
 ##########################################
-# Updated by ikatheria for Yiimpool use... #
+# Updated by klaxis for Yiimpool use... #
 ##########################################
 #!/bin/bash
 blocknotify stratum_one:$1 $2 $3

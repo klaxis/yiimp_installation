@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ##########################################
-# Created by ikatheria for Yiimpool use... #
+# Created by klaxis for Yiimpool use... #
 ##########################################
 
 source /etc/functions.sh

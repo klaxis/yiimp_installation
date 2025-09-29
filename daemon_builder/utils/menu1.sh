@@ -3,7 +3,7 @@
 #
 # This is the main menu For Daemon Builder
 #
-# Author: ikatheria
+# Author: klaxis
 #
 # Updated: 2024-01-03
 #

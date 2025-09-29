@@ -4,7 +4,7 @@
 #####################################################
 # This is the entry point for configuring the system.
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox
-# Updated by ikatheria for crypto use...
+# Updated by klaxis for crypto use...
 #####################################################
 
 source /etc/functions.sh # load our functions

@@ -44,7 +44,7 @@
 
 	# Compil Blocknotify
 	cd ~
-	git clone https://github.com/ikatheria/yiimp/tree/main/stratum
+	git clone https://github.com/klaxis/yiimp/tree/main/stratum
 	sudo chmod -R 777 $HOME/stratum/
 	cd $HOME/stratum/blocknotify
 	sudo sed -i 's/tu8tu5/'$PASSWORD_STRATUM'/' blocknotify.cpp

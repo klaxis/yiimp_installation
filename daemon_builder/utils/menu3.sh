@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #####################################################
-# Updated by ikatheria
+# Updated by klaxis
 # Menu: Update new Stratum
 #####################################################
 

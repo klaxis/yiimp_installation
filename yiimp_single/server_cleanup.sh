@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #########################################
-# Created by ikatheria for Yiimpool use...#
+# Created by klaxis for Yiimpool use...#
 #########################################
 
 source /etc/functions.sh
@@ -57,7 +57,7 @@ else
 source $STORAGE_ROOT/yiimp/first_boot.sh
 fi
 ################################################################################
-# Author: ikatheria                                                              #
+# Author: klaxis                                                              #
 #                                                                              #
 #                                                                              #
 # Program: yiimp screen startup script                                         #
@@ -84,7 +84,7 @@ source /etc/yiimpool.conf
 source /etc/yiimpooldonate.conf
 source /etc/functions.sh
 ################################################################################
-# Author: ikatheria                                                              #
+# Author: klaxis                                                              #
 #                                                                              #
 #                                                                              #
 # Program: yiimp stratum startup script                                        #

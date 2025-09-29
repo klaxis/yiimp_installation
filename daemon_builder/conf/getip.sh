@@ -1,5 +1,5 @@
 #####################################################
-# Updated by ikatheria for crypto use...
+# Updated by klaxis for crypto use...
 #####################################################
 
 FUNC=/etc/daemonbuilder.sh

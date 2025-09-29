@@ -1,5 +1,5 @@
 #####################################################
-# Created by ikatheria for crypto use...
+# Created by klaxis for crypto use...
 #####################################################
 
 source /etc/functions.sh

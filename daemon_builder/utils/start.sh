@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #####################################################
 # This is the entry point for configuring the system.
-# Updated by ikatheria
+# Updated by klaxis
 #####################################################
 
 source /etc/daemonbuilder.sh

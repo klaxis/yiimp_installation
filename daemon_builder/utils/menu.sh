@@ -3,7 +3,7 @@
 #
 # This is the main menu For Daemon Builder
 #
-# Author: ikatheria
+# Author: klaxis
 #
 # Updated: 2023-03-20
 #
@@ -14,7 +14,7 @@ source $STORAGE_ROOT/daemon_builder/conf/info.sh
 
 cd $STORAGE_ROOT/daemon_builder
 
-LATESTVER=$(curl -sL 'https://api.github.com/repos/ikatheria/yiimp_installation/releases/latest' | jq -r '.tag_name')
+LATESTVER=$(curl -sL 'https://api.github.com/repos/klaxis/yiimp_installation/releases/latest' | jq -r '.tag_name')
 
 
 if [[ ("{$LATESTVER}" > "{$VERSION}" && "${LATESTVER}" != "null") ]]; then

@@ -1,8 +1,8 @@
 #!/bin/bash
 ################################################################################
 #
-# Current Created by : ikatheria
-# web: https://ikatheria.xyz
+# Current Created by : klaxis
+# web: https://klaxis.xyz
 # Program:
 #   Install Daemon Coin on Ubuntu 18.04/20.04
 #   v0.8.9 (2023-01-04)
